@@ -71,8 +71,8 @@
 (def PacienteSchema
   "Schema de um paciente"
   {:id s/constrained s/Int pos?, :nome s/Str})
-; Já existe em Clojure as funções -POS- p/ validar se é positivo
-; E a função -POS-INT- que valida se é inteiro e positivo
+; Já existe em Clojure as funções <POS> p/ validar se é positivo
+; E a função <POS-INT> que valida se é inteiro e positivo
 
 (pprint (s/validate PacienteSchema {:id 15, :nome "Guilherme"}))
 ;(pprint (s/validate PacienteSchema {:id -15, :nome "Guilherme"}))
